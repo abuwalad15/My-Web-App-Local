@@ -13,8 +13,9 @@ pipeline {
 
         stage('Deploy to tomcat server') {
             steps {
-                    deploy adapters: [tomcat9(credentialsId: 'e03d3314-895c-4135-a5cc-3a4fe4caa3e8', path: '', url: 'http://192.11.15.124:8080/')], contextPath: 'Web-Kopi', war: 'target/*.war'
-            }
+                deploy adapters: [tomcat9(credentialsId: 'a52389b4-4d66-4db2-a23d-08159d4ecf60', path: '', url: 'http://localhost:8282/')], contextPath: 'My-Web-App-Local', war: 'target/*.war'
+            
+                }
         }
  
     }
