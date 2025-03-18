@@ -1,0 +1,3 @@
+- Github - Online
+- Jenkins - Local
+- Tomcat - Docker Desktop Local
